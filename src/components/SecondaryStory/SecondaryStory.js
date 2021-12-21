@@ -23,6 +23,10 @@ const StoryLink = styled.a`
   &:last-of-type {
     border-bottom 1px solid transparent;
   }
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 `;
 
 const Wrapper = styled.article`
