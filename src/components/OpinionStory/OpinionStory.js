@@ -26,7 +26,7 @@ const StoryLink = styled.a`
     border-bottom 1px solid transparent;
   }
 
-  @media ${QUERIES.tabletOnly} {
+  @media ${QUERIES.tabletAndUp} {
     border-bottom: 1px solid transparent;
   }
 `;
@@ -35,9 +35,8 @@ const Wrapper = styled.article`
   display: flex;
   color: var(--color-gray-900);
 
-  @media ${QUERIES.tabletOnly} {
-    flex-direction: column;
-    flex-basis: 1;
+  @media ${QUERIES.tabletAndUp} {
+    flex-direction: row;
   }
 `;
 

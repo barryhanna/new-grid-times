@@ -18,10 +18,11 @@ const StoryLink = styled.a`
   margin-block: 0.5rem;
 
   padding-bottom: 1rem;
+  margin-right: 1rem;
   border-bottom: 1px solid var(--color-gray-300);
 
   &:last-of-type {
-    border-bottom 1px solid transparent;
+    border-bottom: 1px solid transparent;
   }
 
   &:first-of-type {
@@ -38,10 +39,11 @@ const Wrapper = styled.article`
   grid-template-columns: 120px 1fr;
   color: var(--color-gray-900);
 
-  @media ${QUERIES.tabletOnly} {
+  @media ${QUERIES.tabletAndLaptopOnly} {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border-bottom: 1px solid transparent;
   }
 `;
 

@@ -52,6 +52,39 @@ const Wrapper = styled.div`
   gap: 48px;
   margin-bottom: 48px;
 
+  section:nth-child(1) {
+    /* Main Story */
+    /* background: red; */
+
+    @media ${QUERIES.tabletAndUp} {
+      padding-right: 1rem;
+      border-right: 1px solid var(--color-gray-300);
+    }
+  }
+  section:nth-child(2) {
+    /* Secondary Stories */
+    /* background: green; */
+
+    border-bottom: 1px solid transparent;
+
+    @media ${QUERIES.laptopAndUp} {
+      padding-bottom: 1rem;
+      margin-right: -1rem;
+      border-bottom: 1px solid var(--color-gray-300);
+    }
+  }
+
+  section:nth-child(3) {
+    /* background: yellow; */
+
+    @media ${QUERIES.desktopAndUp} {
+      padding-left: 1rem;
+      margin-left: 0;
+      border-left: 1px solid var(--color-gray-300);
+      border-bottom: 1px solid var(--color-gray-300);
+    }
+  }
+
   @media ${QUERIES.tabletAndUp} {
     grid-template-columns: 65% 30%;
     grid-template-areas:

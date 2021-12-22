@@ -32,6 +32,9 @@ export const QUERIES = {
   tabletOnly: `
     (min-width: ${BREAKPOINTS.tabletMin / 16}rem) and
     (max-width: ${(BREAKPOINTS.laptopMin - 1) / 16}rem)`,
+  tabletAndLaptopOnly: `
+    (min-width: ${BREAKPOINTS.tabletMin / 16}rem) and
+    (max-width: ${(BREAKPOINTS.desktopMin - 1) / 16}rem)`,
 };
 
 export const FAMILIES = {
