@@ -129,6 +129,14 @@ const OpinionStoryList = styled(StoryList)`
 
 const OpinionSection = styled.section`
   grid-area: opinion-stories;
+
+  /* line-up baselines of each section */
+  @media ${QUERIES.desktopAndUp} {
+    h2 {
+      line-height: 1;
+      margin-top: -0.3rem;
+    }
+  }
 `;
 
 const AdvertisementSection = styled.section`
