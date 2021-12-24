@@ -87,7 +87,7 @@ const Wrapper = styled.div`
   }
 
   @media ${QUERIES.tabletAndUp} {
-    grid-template-columns: 65% 30%;
+    grid-template-columns: calc(60% - 1rem) 40%;
     grid-template-areas:
       'main-story secondary-stories'
       'main-story secondary-stories'
