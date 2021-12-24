@@ -75,9 +75,10 @@ const Wrapper = styled.div`
   }
 
   section:nth-child(3) {
+    /* Opinion Stories */
     /* background: yellow; */
 
-    @media ${QUERIES.desktopAndUp} {
+    @media ${QUERIES.laptopAndUp} {
       padding-left: 1rem;
       margin-left: 0;
       border-left: 1px solid var(--color-gray-300);
