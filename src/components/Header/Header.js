@@ -91,6 +91,7 @@ const DesktopSubscribeCTA = styled.div`
     flex-direction: column;
     gap: 0.6875rem;
     padding: 1rem;
+    padding-right: 0;
 
     a {
       font-style: italic;

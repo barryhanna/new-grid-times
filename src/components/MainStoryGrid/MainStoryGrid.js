@@ -98,7 +98,7 @@ const Wrapper = styled.div`
   }
 
   @media ${QUERIES.laptopAndUp} {
-    grid-template-columns: 40% 25% 25%;
+    grid-template-columns: calc(40% - 2rem) 30% 30%;
     grid-template-areas:
       'main-story secondary-stories opinion-stories'
       'main-story secondary-stories opinion-stories'
