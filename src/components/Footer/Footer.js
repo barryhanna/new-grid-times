@@ -1,6 +1,7 @@
 import React from 'react';
 import { Twitter, Facebook } from 'react-feather';
 import styled from 'styled-components/macro';
+import { QUERIES } from '../../constants';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 
 import VisuallyHidden from '../VisuallyHidden';
@@ -25,15 +26,11 @@ const Footer = () => {
           </nav>
           <Social>
             <a href="/">
-              <VisuallyHidden>
-                Visit The Grid Times on Facebook
-              </VisuallyHidden>
+              <VisuallyHidden>Visit The Grid Times on Facebook</VisuallyHidden>
               <Facebook size={20} />
             </a>
             <a href="/">
-              <VisuallyHidden>
-                Visit The Grid Times on Twitter
-              </VisuallyHidden>
+              <VisuallyHidden>Visit The Grid Times on Twitter</VisuallyHidden>
               <Twitter size={20} />
             </a>
           </Social>
@@ -170,6 +167,13 @@ const MainNavArea = styled.div`
   gap: 32px;
   padding: 32px 0 48px;
   text-align: center;
+
+  @media ${QUERIES.tabletAndUp} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+  }
 `;
 
 const MainNavHeading = styled.h2`
