@@ -96,7 +96,7 @@ const Wrapper = styled.div`
     /* margin-bottom: 48px; */
   }
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     grid-template-columns: 40% 25% 25%;
     grid-template-areas:
       'main-story secondary-stories opinion-stories'
